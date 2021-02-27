@@ -1564,7 +1564,8 @@ int sif_spi_protocol_init(struct spi_device *spi)
           esp_dbg(ESP_DBG_ERROR, "rx:[0x%02x],[0x%02x],[0x%02x],[0x%02x],[0x%02x],[0x%02x],[0x%02x],[0x%02x],[0x%02x],[0x%02x]\n", 
             rx_buf1[0],rx_buf1[1],rx_buf1[2],rx_buf1[3],rx_buf1[4],rx_buf1[5],rx_buf1[6],rx_buf1[7],rx_buf1[8],rx_buf1[9]);
           mdelay(100);
-				  if(++fail_count > 10)
+				  if(++fail_count > 10000)
+					  //;
 					  return -ETIMEDOUT;
         } while( rx_buf1[2] != 0x01 );
     } else if( spi_proto_ini_status == 1 ) {

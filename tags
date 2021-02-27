@@ -145,7 +145,7 @@ ESP_U32	esp_debug.h	/^        ESP_U32,$/;"	e	enum:esp_type
 ESP_U64	esp_debug.h	/^        ESP_U64$/;"	e	enum:esp_type
 ESP_U8	esp_debug.h	/^        ESP_U8,$/;"	e	enum:esp_type
 ESP_WAIT_UP_TIME_MS	sdio_sif_esp.c	798;"	d	file:
-ESP_WAIT_UP_TIME_MS	spi_sif_esp.c	2322;"	d	file:
+ESP_WAIT_UP_TIME_MS	spi_sif_esp.c	2323;"	d	file:
 ESP_WL_FLAG_CONNECT	esp_pub.h	135;"	d
 ESP_WL_FLAG_HW_REGISTERED	esp_pub.h	134;"	d
 ESP_WL_FLAG_RFKILL	esp_pub.h	133;"	d
@@ -913,7 +913,7 @@ esp_common_readbyte_with_addr	esp_io.c	/^int esp_common_readbyte_with_addr(struc
 esp_common_write	esp_io.c	/^int esp_common_write(struct esp_pub *epub, u8 *buf, u32 len, int sync)$/;"	f
 esp_common_write_with_addr	esp_io.c	/^int esp_common_write_with_addr(struct esp_pub *epub, u32 addr, u8 *buf, u32 len, int sync)$/;"	f
 esp_common_writebyte_with_addr	esp_io.c	/^int esp_common_writebyte_with_addr(struct esp_pub *epub, u32 addr, u8 buf, int sync)$/;"	f
-esp_cs0_pin	spi_stub.c	/^static int esp_cs0_pin = 16;$/;"	v	file:
+esp_cs0_pin	spi_stub.c	/^static int esp_cs0_pin = 0;$/;"	v	file:
 esp_dbg	esp_debug.h	71;"	d
 esp_dbg	esp_debug.h	81;"	d
 esp_debugfs_add_sub_dir	esp_debug.c	/^struct dentry *esp_debugfs_add_sub_dir(const char *name) {$/;"	f
@@ -952,7 +952,7 @@ esp_ieee80211_phytype	sip2_common.h	/^enum esp_ieee80211_phytype{$/;"	g
 esp_init_data	esp_init_data.h	/^static char esp_init_data[] = {0x5,0x0,4,2,5,5,5,2,5,0,4,5,5,4,5,5,4,-2,-3,-1,-16,-16,-16,-32,-32,-32,204,1,0xff,0xff,0,0,0,0,82,78,74,68,64,56,0,0,1,1,2,3,4,5,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,240,10,0x0,0x0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};/;"	v
 esp_init_table	esp_file.c	/^struct esp_init_table_elem esp_init_table[MAX_ATTR_NUM] = {$/;"	v	typeref:struct:esp_init_table_elem
 esp_init_table_elem	esp_file.h	/^struct esp_init_table_elem {$/;"	s
-esp_interrupt	spi_stub.c	/^static int esp_interrupt = 26;$/;"	v	file:
+esp_interrupt	spi_stub.c	/^static int esp_interrupt = 131;$/;"	v	file:
 esp_is_ip_pkt	esp_utils.c	/^bool esp_is_ip_pkt(struct sk_buff *skb)$/;"	f
 esp_late_resume	esp_pm.c	/^static void esp_late_resume(struct early_suspend*h)$/;"	f	file:
 esp_mac80211_ops	esp_mac80211.c	/^static const struct ieee80211_ops esp_mac80211_ops = {$/;"	v	typeref:struct:ieee80211_ops	file:
@@ -1017,7 +1017,7 @@ esp_register_mac80211	esp_mac80211.c	/^esp_register_mac80211(struct esp_pub *epu
 esp_release_firmware	esp_file.c	/^void esp_release_firmware(const struct firmware *firmware)$/;"	f
 esp_request_firmware	esp_file.c	/^int esp_request_firmware(const struct firmware **firmware_p, const char *name,$/;"	f
 esp_reset_gpio	sdio_stub.c	/^static int esp_reset_gpio = 0;$/;"	v	file:
-esp_reset_gpio	spi_stub.c	/^static int esp_reset_gpio = 13;$/;"	v	file:
+esp_reset_gpio	spi_stub.c	/^static int esp_reset_gpio = 130;$/;"	v	file:
 esp_resp_test	testmode.c	/^void esp_resp_test(char *filename,struct esp_pub *epub)$/;"	f
 esp_rocdone_process	esp_mac80211.c	/^void esp_rocdone_process(struct ieee80211_hw *hw, struct sip_evt_roc *report)$/;"	f
 esp_rx_ampdu_len	esp_wmac.h	/^struct esp_rx_ampdu_len {$/;"	s
